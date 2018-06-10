@@ -23,8 +23,8 @@ class DatabaseExportForDbUnit {
   private Connection con;
 
   private DatabaseExportForDbUnit() throws SQLException {
-    con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/spring_boot_angular_db",
-        "root", "<PASSWORD>");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring_boot_angular_db",
+        "rl", "cimitery");
   }
 
   private void writeToXmlFile(final String tableName, final String sql, final String fileName)
